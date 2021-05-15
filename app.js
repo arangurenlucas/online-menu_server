@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 3001;
 app.use(express.json());
 app.use(cors());
 
-let menuList = require('./menu')
+let menuList = require("./menu");
 let clientList = require("./client");
 let order = require("./order");
 
@@ -33,8 +33,20 @@ app.get("/api/menu/:id", (req, res) => {
 
 app.post("/api/menu", (req, res) => {
   try {
+    if (!req.body.nombre || !req.body.descripcion || !req.body.precio)
+      throw new Error("Todos los datos son requeridos");
+    const nombre = req.body.nombre.toUpperCase().trim();
+    const descripcion = req.body.descripcion.toUpperCase().trim();
+    const precio = req.body.precio;
+
+    const verifyName = menuList.find((item) => item.nombre == nombre);
+
+    if (verifyName) throw new Error("Ese ítem ya existe");
+
     const newItem = {
-      ...req.body,
+      nombre,
+      descripcion,
+      precio,
       id: uniqid(),
     };
     menuList = [...menuList, newItem];
@@ -46,7 +58,12 @@ app.post("/api/menu", (req, res) => {
 
 app.put("/api/menu/:id", (req, res) => {
   try {
-    const toUpdate = { ...req.body, id: req.params.id };
+    const datos = menuList.find((item) => item.id == req.params.id);
+    const nombre = datos.nombre;
+    const descripcion = req.body.descripcion.toUpperCase().trim();
+    const precio = req.body.precio;
+
+    const toUpdate = { nombre, descripcion, precio, id: req.params.id };
     menuList = menuList.map((item) =>
       item.id == req.params.id ? toUpdate : item
     );
@@ -59,7 +76,7 @@ app.put("/api/menu/:id", (req, res) => {
 app.delete("/api/menu/:id", (req, res) => {
   try {
     menuList = menuList.filter((item) => item.id != req.params.id);
-    res.json({});
+    res.json('Eliminado con éxito');
   } catch (e) {
     res.status(400).send(e.message);
   }
