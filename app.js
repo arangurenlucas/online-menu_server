@@ -38,6 +38,7 @@ app.post("/api/menu", (req, res) => {
     const nombre = req.body.nombre.toUpperCase().trim();
     const descripcion = req.body.descripcion.toUpperCase().trim();
     const precio = req.body.precio;
+    const unidades = req.body.unidades;
 
     const verifyName = menuList.find((item) => item.nombre == nombre);
 
@@ -47,6 +48,7 @@ app.post("/api/menu", (req, res) => {
       nombre,
       descripcion,
       precio,
+      unidades,
       id: uniqid(),
     };
     menuList = [...menuList, newItem];
@@ -62,8 +64,15 @@ app.put("/api/menu/:id", (req, res) => {
     const nombre = datos.nombre;
     const descripcion = req.body.descripcion.toUpperCase().trim();
     const precio = req.body.precio;
+    const unidades = req.body.unidades;
 
-    const toUpdate = { nombre, descripcion, precio, id: req.params.id };
+    const toUpdate = {
+      nombre,
+      descripcion,
+      precio,
+      unidades,
+      id: req.params.id,
+    };
     menuList = menuList.map((item) =>
       item.id == req.params.id ? toUpdate : item
     );
@@ -76,7 +85,7 @@ app.put("/api/menu/:id", (req, res) => {
 app.delete("/api/menu/:id", (req, res) => {
   try {
     menuList = menuList.filter((item) => item.id != req.params.id);
-    res.json('Eliminado con éxito');
+    res.json("Eliminado con éxito");
   } catch (e) {
     res.status(400).send(e.message);
   }
