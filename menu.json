@@ -1,1 +1,179 @@
-[]
+[
+  {
+    "nombre": "LODEMARU ROLL",
+    "descripcion": "ROLL DE SALMÓN CON PHILA, REBOZADO Y FRITO",
+    "precio": 600,
+    "unidades": 8
+  },
+  {
+    "nombre": "SKIN ROLL",
+    "descripcion": "ROLL DE PIEL TOSTADA DE SALMÓN, PALTA Y PHILA, REBOZADO Y FRITO",
+    "precio": 600,
+    "unidades": 8
+  },
+  {
+    "nombre": "CHICKEN FIRE",
+    "descripcion": "ROLL DE POLLO CROCANTE Y CHEDDAR, REBOZADO Y FRITO",
+    "precio": 600,
+    "unidades": 8
+  },
+  {
+    "nombre": "HOT SAKE ROLL",
+    "descripcion": "ROLL DE SALMÓN, PALTA Y PHILA, REBOZADO Y FRITO",
+    "precio": 550,
+    "unidades": 6
+  },
+  {
+    "nombre": "HOT EBI ROLL",
+    "descripcion": "ROLL DE SALMÓN AHUMADO, LANGOSTINOS Y CHEDDAR, REBOZADO Y FRITO",
+    "precio": 550,
+    "unidades": 6
+  },
+  {
+    "nombre": "TEMPURA DE SALMÓN",
+    "descripcion": "TROZOS DE SALMÓN REBOZADOS Y FRITOS",
+    "precio": 550,
+    "unidades": 6
+  },
+  {
+    "nombre": "TEMPURA DE LANGOSTINOS",
+    "descripcion": "LANGOSTINOS REBOZADOS Y FRITOS",
+    "precio": 550,
+    "unidades": 6
+  },
+  {
+    "nombre": "TEMPURA DE POLLO",
+    "descripcion": "PIEZAS DE POLLO REBOZADO Y FRITO",
+    "precio": 550,
+    "unidades": 6
+  },
+  {
+    "nombre": "VEGGIE ROLL",
+    "descripcion": "ROLL DE ZANAHORIA BLANQUEADA, PALTA Y PHILA",
+    "precio": 420,
+    "unidades": 8
+  },
+  {
+    "nombre": "MUSHROOM",
+    "descripcion": "ROLL DE PORTOBELLO SALTEADO, ZUCCHINI Y PHILA",
+    "precio": 420,
+    "unidades": 8
+  },
+  {
+    "nombre": "MIDORI",
+    "descripcion": "ROLL DE TAMAGO Y PHILA, CUBIERTO CON PALTA",
+    "precio": 420,
+    "unidades": 8
+  },
+  {
+    "nombre": "GREEN NEW YORK",
+    "descripcion": "ROLL DE SALMÓN Y PHILA, CUBIERTO CON CEBOLLA DE VERDEO",
+    "precio": 530,
+    "unidades": 8
+  },
+  {
+    "nombre": "NEW YORK",
+    "descripcion": "ROLL DE SALMÓN, PALTA Y PHILA",
+    "precio": 530,
+    "unidades": 8
+  },
+  {
+    "nombre": "EBI ROLL",
+    "descripcion": "ROLL DE LANGOSTINOS, PALTA Y PHILA",
+    "precio": 530,
+    "unidades": 8
+  },
+  {
+    "nombre": "BUENOS AIRES",
+    "descripcion": "ROLL DE LANGOSTINOS, PALTA Y PHILA, CUBIERTO CON SALMÓN",
+    "precio": 530,
+    "unidades": 8
+  },
+  {
+    "nombre": "TROPICAL",
+    "descripcion": "ROLL DE SALMÓN AHUMADO, FRUTA DE ESTACIÓN Y PHILA",
+    "precio": 530,
+    "unidades": 8
+  },
+  {
+    "nombre": "CALIFORNIA",
+    "descripcion": "ROLL DE KANIKAMA, PALTA Y PHILA",
+    "precio": 530,
+    "unidades": 8
+  },
+  {
+    "nombre": "PHILADELPHIA",
+    "descripcion": "ROLL DE SALMÓN, PEPINO Y PHILA",
+    "precio": 530,
+    "unidades": 8
+  },
+  {
+    "nombre": "TUNA",
+    "descripcion": "ROLL DE ATÚN Y PHILA",
+    "precio": 530,
+    "unidades": 8
+  },
+  {
+    "nombre": "SAKEMAKI",
+    "descripcion": "ROLL DE SALMÓN",
+    "precio": 500,
+    "unidades": 6
+  },
+  {
+    "nombre": "SURIMI",
+    "descripcion": "ROLL DE KANIKAMA Y PEPINO",
+    "precio": 500,
+    "unidades": 6
+  },
+  {
+    "nombre": "KANI MAKI",
+    "descripcion": "ROLL DE KANIKAMA",
+    "precio": 500,
+    "unidades": 6
+  },
+  {
+    "nombre": "NIGUIRIS DE SALMÓN",
+    "descripcion": "ARRÓZ CON FINAS FETAS DE SALMÓN",
+    "precio": 500,
+    "unidades": 6
+  },
+  {
+    "nombre": "NIGUIRIS DE LANGOSTINOS",
+    "descripcion": "ARRÓZ CON LANGOSTINOS Y ÁLGA NORI",
+    "precio": 500,
+    "unidades": 6
+  },
+  {
+    "nombre": "NIGUIRIS AVOCADO",
+    "descripcion": "ARRÓZ CON PALTA Y PHILA",
+    "precio": 500,
+    "unidades": 6
+  },
+  {
+    "nombre": "GEISHAS DE SALMÓN",
+    "descripcion": "PALTA Y PHILA ENVUELTOS EN FINAS FETAS DE SALMÓN",
+    "precio": 550,
+    "unidades": 6
+  },
+  {
+    "nombre": "SASHIMI",
+    "descripcion": "FINAS FETAS DE SALMÓN",
+    "precio": 550,
+    "unidades": 6
+  },
+  {
+    "nombre": "WOK DE MAR",
+    "descripcion": "SALTEADO DE VERDURAS CON FIDEOS O ARRÓZ, LANGOSTÍNOS, KANIKAMA Y SALMÓN CON SALSA DE SOJA",
+    "precio": 550
+  },
+  {
+    "nombre": "WOK DE POLLO TERIYAKI",
+    "descripcion": "SALTEADO DE VERDURAS CON POLLO CROCANTE FRITO Y SALSA TERIYAKI",
+    "precio": 500
+  },
+  {
+    "nombre": "WOK VEGETARIANO",
+    "descripcion": "SALTEADO DE VERDURAS CON PORTOBELLO Y SALSA DE SOJA",
+    "precio": 450
+  }
+]
