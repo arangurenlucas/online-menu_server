@@ -9,8 +9,7 @@ app.use(express.json());
 app.use(cors());
 
 let menuList = require("./menu");
-let clientList = require("./client");
-let order = require("./order");
+let categoryList = require("./category.json");
 
 //menuList
 app.get("/api/menu", (req, res) => {
@@ -33,12 +32,18 @@ app.get("/api/menu/:id", (req, res) => {
 
 app.post("/api/menu", (req, res) => {
   try {
-    if (!req.body.nombre || !req.body.descripcion || !req.body.precio)
+    if (
+      !req.body.nombre ||
+      !req.body.descripcion ||
+      !req.body.precio ||
+      !req.body.categoria_id
+    )
       throw new Error("Todos los datos son requeridos");
     const nombre = req.body.nombre.toUpperCase().trim();
     const descripcion = req.body.descripcion.toUpperCase().trim();
     const precio = req.body.precio;
     const unidades = req.body.unidades;
+    const categoria_id = req.body.categoria_id;
 
     const verifyName = menuList.find((item) => item.nombre == nombre);
 
@@ -49,6 +54,7 @@ app.post("/api/menu", (req, res) => {
       descripcion,
       precio,
       unidades,
+      categoria_id,
       id: uniqid(),
     };
     menuList = [...menuList, newItem];
@@ -65,12 +71,14 @@ app.put("/api/menu/:id", (req, res) => {
     const descripcion = req.body.descripcion.toUpperCase().trim();
     const precio = req.body.precio;
     const unidades = req.body.unidades;
+    const categoria_id = req.body.categoria_id;
 
     const toUpdate = {
       nombre,
       descripcion,
       precio,
       unidades,
+      categoria_id,
       id: req.params.id,
     };
     menuList = menuList.map((item) =>
@@ -91,60 +99,64 @@ app.delete("/api/menu/:id", (req, res) => {
   }
 });
 
-//clientList
+//categorias
 
-app.get("/api/client", (req, res) => {
+app.get("/api/categorias", (req, res) => {
   try {
-    res.json(clientList);
+    res.json(categoryList);
   } catch (e) {
-    res.status(404).send(e.message);
+    res.status(400).send(e.message);
   }
 });
 
-app.get("/api/client/:id", (req, res) => {
+app.get("/api/categorias/:id", (req, res) => {
   try {
-    const clientFind = clientList.find((client) => client.id == req.params.id);
-    if (clientFind) res.json(clientFind);
-    else throw new Error("No se encontró el cliente");
+    const itemFound = categoryList.find(
+      (unaCategoria) => unaCategoria.id == req.params.id
+    );
+    if (itemFound) res.json(itemFound);
+    throw new Error("Esa categoria no existe");
   } catch (e) {
-    res.status(404).send(e.message);
+    res.status(400).send(e.message);
   }
 });
 
-app.post("/api/client", (req, res) => {
+app.post("/api/categorias", (req, res) => {
   try {
-    const newClient = {
-      ...req.body,
+    const nombre = req.body.nombre.toUpperCase().trim();
+    if (!nombre) throw new Error("Nombre de categoría es necesario");
+    const verifyName = categoryList.find(
+      (unaCategoria) => unaCategoria.nombre == nombre
+    );
+    if (verifyName) throw new Error("Esa categoria ya existe");
+    const newCategory = {
+      nombre,
       id: uniqid(),
     };
-    clientList = [...clientList, newClient];
-    res.json(newClient);
+    categoryList = [...categoryList, newCategory];
+    res.json(newCategory);
   } catch (e) {
-    res.status(404).send(e.message);
+    res.status(400).send(e.message);
   }
 });
 
-app.put("/api/client/:id", (req, res) => {
+app.delete("/api/categorias/:id", (req, res) => {
   try {
-    const toUpdate = { ...req.body, id: req.params.id };
-    clientList = clientList.map((client) =>
-      client.id != req.params.id ? toUpdate : client
+    const verifyMenu = menuList.find(
+      (item) => item.categoria_id == req.params.id
     );
-    res.json(toUpdate);
+    if (verifyMenu)
+      throw new Error(
+        "Esa categoria tiene items asociados, no se puede eliminar"
+      );
+    categoryList = categoryList.filter(
+      (unaCategoria) => unaCategoria.id != req.params.id
+    );
+
+    res.send("Eliminado con éxito");
   } catch (e) {
-    res.status(404).send(e.message);
+    res.status(400).send(e.message);
   }
 });
-
-app.delete("/api/client/:id", (req, res) => {
-  try {
-    clientList = clientList.filter((client) => client.id != req.params.id);
-    res.json({});
-  } catch (e) {
-    res.status(404).send(e.message);
-  }
-});
-
-//order
 
 app.listen(PORT, () => console.log("App corriendo en el puerto " + PORT));

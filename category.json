@@ -1,0 +1,30 @@
+[
+  {
+    "nombre": "URAMAKIS",
+    "id": 0
+  },
+  {
+    "nombre": "NORIMAKIS",
+    "id": 1
+  },
+  {
+    "nombre": "CALIENTES",
+    "id": 2
+  },
+  {
+    "nombre": "ESPECIALES",
+    "id": 3
+  },
+  {
+    "nombre": "WOKS",
+    "id": 4
+  },
+  {
+    "nombre": "NIGUIRIS",
+    "id": 5
+  },
+  {
+    "nombre": "VEGETARIANOS",
+    "id": 6
+  }
+]

@@ -4,206 +4,236 @@
     "descripcion": "ROLL DE SALMÓN CON PHILA, REBOZADO Y FRITO",
     "precio": 600,
     "unidades": 8,
-    "id": 0
+    "id": 0,
+    "categoria_id": 3
   },
   {
     "nombre": "SKIN ROLL",
     "descripcion": "ROLL DE PIEL TOSTADA DE SALMÓN, PALTA Y PHILA, REBOZADO Y FRITO",
     "precio": 600,
     "unidades": 8,
-    "id": 1
+    "id": 1,
+    "categoria_id": 3
   },
   {
     "nombre": "CHICKEN FIRE",
     "descripcion": "ROLL DE POLLO CROCANTE Y CHEDDAR, REBOZADO Y FRITO",
     "precio": 600,
     "unidades": 8,
-    "id": 2
+    "id": 2,
+    "categoria_id": 3
   },
   {
     "nombre": "HOT SAKE ROLL",
     "descripcion": "ROLL DE SALMÓN, PALTA Y PHILA, REBOZADO Y FRITO",
     "precio": 550,
     "unidades": 6,
-    "id": 3
+    "id": 3,
+    "categoria_id": 2
   },
   {
     "nombre": "HOT EBI ROLL",
     "descripcion": "ROLL DE SALMÓN AHUMADO, LANGOSTINOS Y CHEDDAR, REBOZADO Y FRITO",
     "precio": 550,
     "unidades": 6,
-    "id": 4
+    "id": 4,
+    "categoria_id": 2
   },
   {
     "nombre": "TEMPURA DE SALMÓN",
     "descripcion": "TROZOS DE SALMÓN REBOZADOS Y FRITOS",
     "precio": 550,
     "unidades": 6,
-    "id": 5
+    "id": 5,
+    "categoria_id": 2
   },
   {
     "nombre": "TEMPURA DE LANGOSTINOS",
     "descripcion": "LANGOSTINOS REBOZADOS Y FRITOS",
     "precio": 550,
     "unidades": 6,
-    "id": 6
+    "id": 6,
+    "categoria_id": 2
   },
   {
     "nombre": "TEMPURA DE POLLO",
     "descripcion": "PIEZAS DE POLLO REBOZADO Y FRITO",
     "precio": 550,
     "unidades": 6,
-    "id": 7
+    "id": 7,
+    "categoria_id": 2
   },
   {
     "nombre": "VEGGIE ROLL",
     "descripcion": "ROLL DE ZANAHORIA BLANQUEADA, PALTA Y PHILA",
     "precio": 420,
     "unidades": 8,
-    "id": 8
+    "id": 8,
+    "categoria_id": 6
   },
   {
     "nombre": "MUSHROOM",
     "descripcion": "ROLL DE PORTOBELLO SALTEADO, ZUCCHINI Y PHILA",
     "precio": 420,
     "unidades": 8,
-    "id": 9
+    "id": 9,
+    "categoria_id": 6
   },
   {
     "nombre": "MIDORI",
     "descripcion": "ROLL DE TAMAGO Y PHILA, CUBIERTO CON PALTA",
     "precio": 420,
     "unidades": 8,
-    "id": 10
+    "id": 10,
+    "categoria_id": 6
   },
   {
     "nombre": "GREEN NEW YORK",
     "descripcion": "ROLL DE SALMÓN Y PHILA, CUBIERTO CON CEBOLLA DE VERDEO",
     "precio": 530,
     "unidades": 8,
-    "id": 11
+    "id": 11,
+    "categoria_id": 0
   },
   {
     "nombre": "NEW YORK",
     "descripcion": "ROLL DE SALMÓN, PALTA Y PHILA",
     "precio": 530,
     "unidades": 8,
-    "id": 12
+    "id": 12,
+    "categoria_id": 0
   },
   {
     "nombre": "EBI ROLL",
     "descripcion": "ROLL DE LANGOSTINOS, PALTA Y PHILA",
     "precio": 530,
     "unidades": 8,
-    "id": 13
+    "id": 13,
+    "categoria_id": 0
   },
   {
     "nombre": "BUENOS AIRES",
     "descripcion": "ROLL DE LANGOSTINOS, PALTA Y PHILA, CUBIERTO CON SALMÓN",
     "precio": 530,
     "unidades": 8,
-    "id": 14
+    "id": 14,
+    "categoria_id": 0
   },
   {
     "nombre": "TROPICAL",
     "descripcion": "ROLL DE SALMÓN AHUMADO, FRUTA DE ESTACIÓN Y PHILA",
     "precio": 530,
     "unidades": 8,
-    "id": 15
+    "id": 15,
+    "categoria_id": 0
   },
   {
     "nombre": "CALIFORNIA",
     "descripcion": "ROLL DE KANIKAMA, PALTA Y PHILA",
     "precio": 530,
     "unidades": 8,
-    "id": 16
+    "id": 16,
+    "categoria_id": 0
   },
   {
     "nombre": "PHILADELPHIA",
     "descripcion": "ROLL DE SALMÓN, PEPINO Y PHILA",
     "precio": 530,
     "unidades": 8,
-    "id": 17
+    "id": 17,
+    "categoria_id": 0
   },
   {
     "nombre": "TUNA",
     "descripcion": "ROLL DE ATÚN Y PHILA",
     "precio": 530,
     "unidades": 8,
-    "id": 18
+    "id": 18,
+    "categoria_id": 0
   },
   {
     "nombre": "SAKEMAKI",
     "descripcion": "ROLL DE SALMÓN",
     "precio": 500,
     "unidades": 6,
-    "id": 19
+    "id": 19,
+    "categoria_id": 1
   },
   {
     "nombre": "SURIMI",
     "descripcion": "ROLL DE KANIKAMA Y PEPINO",
     "precio": 500,
     "unidades": 6,
-    "id": 20
+    "id": 20,
+    "categoria_id": 1
   },
   {
     "nombre": "KANI MAKI",
     "descripcion": "ROLL DE KANIKAMA",
     "precio": 500,
     "unidades": 6,
-    "id": 21
+    "id": 21,
+    "categoria_id": 1
   },
   {
     "nombre": "NIGUIRIS DE SALMÓN",
     "descripcion": "ARRÓZ CON FINAS FETAS DE SALMÓN",
     "precio": 500,
     "unidades": 6,
-    "id": 22
+    "id": 22,
+    "categoria_id": 5
   },
   {
     "nombre": "NIGUIRIS DE LANGOSTINOS",
     "descripcion": "ARRÓZ CON LANGOSTINOS Y ÁLGA NORI",
     "precio": 500,
     "unidades": 6,
-    "id": 23
+    "id": 23,
+    "categoria_id": 5
   },
   {
     "nombre": "NIGUIRIS AVOCADO",
     "descripcion": "ARRÓZ CON PALTA Y PHILA",
     "precio": 500,
     "unidades": 6,
-    "id": 24
+    "id": 24,
+    "categoria_id": 5
   },
   {
     "nombre": "GEISHAS DE SALMÓN",
     "descripcion": "PALTA Y PHILA ENVUELTOS EN FINAS FETAS DE SALMÓN",
     "precio": 550,
     "unidades": 6,
-    "id": 25
+    "id": 25,
+    "categoria_id": 5
   },
   {
     "nombre": "SASHIMI",
     "descripcion": "FINAS FETAS DE SALMÓN",
     "precio": 550,
     "unidades": 6,
-    "id": 26
+    "id": 26,
+    "categoria_id": 5
   },
   {
     "nombre": "WOK DE MAR",
     "descripcion": "SALTEADO DE VERDURAS CON FIDEOS O ARRÓZ, LANGOSTÍNOS, KANIKAMA Y SALMÓN CON SALSA DE SOJA",
     "precio": 550,
-    "id": 27
+    "id": 27,
+    "categoria_id": 4
   },
   {
     "nombre": "WOK DE POLLO TERIYAKI",
     "descripcion": "SALTEADO DE VERDURAS CON POLLO CROCANTE FRITO Y SALSA TERIYAKI",
     "precio": 500,
-    "id": 28
+    "id": 28,
+    "categoria_id": 4
   },
   {
     "nombre": "WOK VEGETARIANO",
     "descripcion": "SALTEADO DE VERDURAS CON PORTOBELLO Y SALSA DE SOJA",
     "precio": 450,
-    "id": 29
+    "id": 29,
+    "categoria_id": 4
   }
 ]
